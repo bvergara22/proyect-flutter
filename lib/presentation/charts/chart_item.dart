@@ -4,6 +4,7 @@ class ChartItem {
   final String id;
   final String title;
   final String subtitle;
+  final String description;
   final String category;
   final Widget Function() builder;
 
@@ -11,6 +12,7 @@ class ChartItem {
     required this.id,
     required this.title,
     required this.subtitle,
+    this.description = '',
     required this.category,
     required this.builder,
   });
